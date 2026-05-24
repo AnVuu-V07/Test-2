@@ -7,7 +7,13 @@ vector<int> TaoChuoi(int n){
 }
 
 void SapXepChuoi(vector<int> &DS){
-
+    for(int i = 0; i < DS.size() - 1; i++){
+        for(int j = 0; j < DS.size() - i - 1; j++){
+            if(DS[j] > DS[j + 1]){
+                swap(DS[j], DS[j + 1]);
+            }
+        }
+    }
 }
 
 int main(){
