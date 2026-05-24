@@ -3,7 +3,12 @@
 using namespace std;
 
 vector<int> TaoChuoi(int n){
-    
+    cout<<"Nhap cac phan tu: ";
+    vector<int> DS(n);
+    for(int i = 0; i < n; i++){
+        cin >> DS[i];
+    }   
+    return DS;
 }
 
 void SapXepChuoi(vector<int> &DS){
